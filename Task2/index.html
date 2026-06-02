@@ -1,1 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Photography Gallery</title>
 
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+
+<body>
+
+    <!-- Loader -->
+
+    <div id="loader">
+        <div class="spinner"></div>
+        <h2>Loading Gallery...</h2>
+    </div>
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="logo">
+            <i class="fa-solid fa-camera"></i>
+            Travel Gallery
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#stats">Stats</a>
+        </nav>
+
+        <div class="actions">
+
+            <button id="themeBtn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+    <h1>Capture The Beauty Of The World</h1>
+
+    <p>
+        Discover breathtaking landscapes, vibrant cityscapes,
+        and incredible wildlife through a modern interactive
+        gallery experience.
+    </p>
+
+    <div class="hero-buttons">
+
+        <a href="#gallery" class="btn-primary">
+            Explore Gallery
+        </a>
+
+        <a href="#stats" class="btn-secondary">
+            View Statistics
+        </a>
+
+    </div>
+
+</section>
+
+    <section class="about">
+
+       <h2>About Gallery</h2>  
+
+
+       <p>This responsive image gallery was developed using HTML, CSS, and JavaScript.
+         It includes advanced features such as image filtering,searching, lightbox viewing, dark mode,favorites management, and responsive design.</p>
+
+    </section>
+
+    <!-- Search -->
+
+    <section class="controls">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Search destinations, cities or wildlife..."
+        >
+
+
+        <div class="filters">
+
+            <button class="filter-btn active"
+                data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn"
+                data-filter="nature">
+                Nature
+            </button>
+
+            <button class="filter-btn"
+                data-filter="city">
+                City
+            </button>
+
+            <button class="filter-btn"
+                data-filter="animals">
+                Animals
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Statistics -->
+
+    <section id="stats">
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-image"></i>
+
+        <h2 id="totalImages">12</h2>
+
+        <p>Total Images</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-heart"></i>
+
+        <h2 id="favoriteCount">0</h2>
+
+        <p>Favorites</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-layer-group"></i>
+
+        <h2>3</h2>
+
+        <p>Categories</p>
+
+    </div>
+
+</section>
+
+    <!-- Gallery -->
+    <section class="gallery-title">
+
+    <h2>Featured Photography Collection</h2>
+
+    <p>
+        Browse stunning photographs from around the world.
+    </p>
+
+    </section>
+
+    <section
+        class="gallery"
+        id="gallery">
+
+        <!-- Nature -->
+
+        <div class="card nature">
+
+            <img src="images/nature4.jpg" alt="Mountain Lake" loading="lazy">
+
+            <div class="overlay">
+
+                <h3>Mountain Lake</h3>
+
+                <div class="buttons">
+
+                    <button class="favorite">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="download">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card nature">
+ 
+ 
+            <img src="images/nature.2.jpg" alt="Forest View" loading="lazy">
+
+            <div class="overlay">
+
+                <h3>Forest View</h3>
+
+                <div class="buttons">
+
+                    <button class="favorite">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="download">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card nature">
+
+            <img src="images/nature1.jpg" alt="Waterfall" loading="lazy">
+
+            <div class="overlay">
+
+                <h3>Waterfall</h3>
+
+                <div class="buttons">
+
+                    <button class="favorite">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="download">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card nature">
+
+            <img src="images/nature.3.jpg" alt="Green Valley" loading="lazy">
+
+            <div class="overlay">
+
+                <h3>Green Valley</h3>
+
+                <div class="buttons">
+
+                    <button class="favorite">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="download">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- City -->
+
+        <div class="card city">
+
+            <img src="images/city1.jpg" alt="Modern City" loading="lazy">
+
+            <div class="overlay">
+
+                <h3>Modern City</h3>
+
+                <div class="buttons">
+
+                    <button class="favorite">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="download">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card city">
+
+            <img src="images/city2.jpg" alt="Night Lights" loading="lazy">
+
+            <div class="overlay">
+
+                <h3>Night Lights</h3>
+
+                <div class="buttons">
+
+                    <button class="favorite">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="download">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card city">
+
+            <img src="images/city3.jpg" alt="Skyline" loading="lazy">
+
+            <div class="overlay">
+
+                <h3>Skyline</h3>
+
+                <div class="buttons">
+
+                    <button class="favorite">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="download">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card city">
+
+            <img src="images/city4.jpg" alt="Street View" loading="lazy">
+
+            <div class="overlay">
+
+                <h3>Street View</h3>
+
+                <div class="buttons">
+
+                    <button class="favorite">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="download">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Animals -->
+
+        <div class="card animals">
+
+            <img src="images/animal1.jpg" alt="Golden Deer" loading="lazy">
+
+            <div class="overlay">
+
+                <h3>Golden Deer</h3>
+
+                <div class="buttons">
+
+                    <button class="favorite">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="download">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card animals">
+
+            <img src="images/animal3.jpg" alt="Dog Portrait" loading="lazy">
+
+            <div class="overlay">
+
+                <h3>Dog Portrait</h3>
+
+                <div class="buttons">
+
+                    <button class="favorite">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="download">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card animals">
+
+            <img src="images/animal2.jpg" alt="Wild Animal" loading="lazy">
+
+            <div class="overlay">
+
+                <h3>Wild Animal</h3>
+
+                <div class="buttons">
+
+                    <button class="favorite">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="download">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card animals">
+
+            <img src="images/animal4.jpg" alt="Nature Wildlife" loading="lazy">
+
+            <div class="overlay">
+
+                <h3>Nature Wildlife</h3>
+
+                <div class="buttons">
+
+                    <button class="favorite">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <button class="download">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Lightbox -->
+
+    <div id="lightbox">
+
+        <span id="close">&times;</span>
+
+        <button id="prev">
+            &#10094;
+        </button>
+
+        <img id="lightboxImg">
+
+        <button id="next">
+            &#10095;
+        </button>
+
+    </div>
+
+    <!-- Slideshow -->
+
+    <div class="slideshow-section">
+
+        <button id="slideshowBtn">
+            Start Slideshow
+        </button>
+
+
+    </div>
+
+    <!-- Back To Top -->
+
+    <button id="topBtn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button><footer>
+    <p>© 2026 Travel Photography Gallery | Designed by M.Bhavana</p>
+</footer>
+
+    <script src="script.js"></script>
+    
+
+</body>
+</html>
